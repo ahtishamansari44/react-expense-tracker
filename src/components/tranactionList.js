@@ -3,9 +3,6 @@ import {TransContext} from '../transContext'
 
 export const TranactionList = () => {
     let {trans, deleteTrans} = useContext(TransContext);
-    console.log(deleteTrans);
-    console.log(trans);
-
 
     return (
         <div className="tranactionList">
