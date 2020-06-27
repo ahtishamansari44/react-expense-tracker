@@ -1,38 +1,95 @@
-.App {
+.body{
+  background-color: DCDCDC;
+}
+.container{
+  width: 400px;
+  margin: 0 auto;
+}
+.container h2{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.balance h1{
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.balance h4{
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.incom-expenses{
+  margin: 16px 6px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 16px 40px;
+  text-align: center;
+  background-color: #ffff;
+  box-shadow: 0 0 10px gray;
 }
-
-.App-link {
-  color: #61dafb;
+.incom-expenses div{
+  width: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.incom-expenses h4{
+  margin: 0;
+  text-transform: uppercase;
+}
+.incom-expenses p{
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+ }
+ .incom-expenses .money-plus{
+   color: green;
+ }
+ .incom-expenses .money-min{
+   color: red;
+ }
+ .tranactionList hr{
+   background-color: gray;
+   color: gray;
+ }
+.tranactionList ul{
+  list-style: none;
+  margin: 8px 6px;
+  padding: 0;
+}
+.tranactionList ul li{
+  padding: 10px 30px;
+  margin: 6px 0px;
+  position: relative;
+  box-shadow: 0 0 10px gray;
+  font-weight: 500;
+}
+.tranactionList ul li span{
+  float: right;
+}
+.tranactionList ul li button{
+  display: none;
+}
+.tranactionList ul li:hover> button{
+  position: absolute;
+  right: -6px;
+  height: 100%;
+  display: inline-block;
+  margin-top: -10px;
+  background-color: red;
+  color: #ffff;
+  cursor: pointer;
+}
+.addTransaction{
+  font-weight: 500;
+  width: 100%;
+}
+.addTransaction input{
+  width: 95%;
+  padding: 8px;
+  margin: 8px 0px;
+}
+.addTransaction .btn{
+  width: 100%;
+  background-color: blueviolet;
+  border: none;
+  padding: 8px;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 3px;
+  box-shadow: 0 0 10px gray;
 }
