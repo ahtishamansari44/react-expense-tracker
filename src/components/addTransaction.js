@@ -3,7 +3,7 @@ import {TransContext} from '../transContext'
 
 export const AddTransaction = () => {
 
-    let {trans, addTrans} = useContext(TransContext)
+    let {addTrans} = useContext(TransContext)
     let [newDesc, setDesc] = useState('');
     let [newAmount, setAmount] = useState();
     console.log(newDesc, newAmount)
